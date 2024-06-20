@@ -1,26 +1,40 @@
-Fisierul ./director/file1 a fost deschis
-Fisierul ./director/file1 a fost modificat
-Fisierul ./director/file1 a fost deschis
-Fisierul ./director/file1 a fost accesat
-Fisierul sau directorul ./director/file3 a fost creat
-Fisierul ./director/file3 a fost deschis
-Atributele fisierului ./director/file3 au fost schimbate
-Fisierul ./director/file2 a fost deschis
-Fisierul ./director/file2 a fost deschis
-Fisierul ./director/file2 a fost accesat
-Fisierul ./director/file1 a fost deschis
-Fisierul ./director/file1 a fost accesat
-Fisierul ./director/file2 a fost deschis
-Fisierul ./director/file2 a fost accesat
-Fisierul ./director/file2 a fost accesat
-Fisierul ./director/file2 a fost deschis
-Fisierul ./director/file2 a fost accesat
-Fisierul ./director/file2 a fost deschis
-Fisierul sau directorul ./director/.goutputstream-X4WMP2 a fost creat
-Fisierul ./director/.goutputstream-X4WMP2 a fost deschis
-Atributele fisierului ./director/.goutputstream-X4WMP2 au fost schimbate
-Fisierul ./director/.goutputstream-X4WMP2 a fost modificat
-Fisierul ./director/.goutputstream-X4WMP2 a fost mutat din director
-Fisierul ./director/file2 a fost mutat in director
-Fisierul ./director/file2 a fost deschis
-Fisierul ./director/file2 a fost accesat
+Fisierul file1 a fost deschis
+Fisierul file1 a fost accesat
+Fisierul file2 a fost deschis
+Fisierul file2 a fost deschis
+Fisierul file2 a fost accesat
+Fisierul file2 a fost accesat
+Fisierul file2 a fost deschis
+Fisierul file2 a fost accesat
+Fisierul file2 a fost deschis
+Fisierul sau directorul .goutputstream-4GIYP2 a fost creat
+Fisierul .goutputstream-4GIYP2 a fost deschis
+Atributele fisierului .goutputstream-4GIYP2 au fost schimbate
+Fisierul .goutputstream-4GIYP2 a fost modificat
+Fisierul .goutputstream-4GIYP2 a fost mutat din director
+Fisierul file2 a fost mutat in director
+Fisierul file2 a fost deschis
+Fisierul file2 a fost accesat
+Fisierul file3 a fost deschis
+Atributele fisierului file3 au fost schimbate
+Atributele fisierului file3 au fost schimbate
+Fisierul file3 a fost mutat din director
+Fisierul file4 a fost mutat in director
+Fisierul file1 a fost deschis
+Fisierul file1 a fost accesat
+Fisierul file1 a fost deschis
+Fisierul file1 a fost modificat
+Fisierul file1 a fost mutat din director
+Fisierul file3 a fost mutat in director
+Fisierul file3 a fost mutat din director
+Fisierul file1 a fost mutat in director
+Fisierul file1 a fost deschis
+Fisierul file1 a fost deschis
+Fisierul file1 a fost accesat
+Fisierul file1 a fost accesat
+Fisierul file1 a fost deschis
+Fisierul file1 a fost accesat
+Fisierul sau directorul file3 a fost creat
+Fisierul file3 a fost deschis
+Atributele fisierului file3 au fost schimbate
+Fisierul sau directorul file3 a fost sters

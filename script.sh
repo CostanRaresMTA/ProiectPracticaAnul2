@@ -36,7 +36,8 @@ fi
 #Functie de logare in fisier
 log_event() {
   local file="$1"
-  local event="$2"
+  echo "$event_message" >> "$LOG_FILE"
+  # local event="$2"
   # local event_message="$3"
   # sqlite3 "$DB_FILE" "INSERT INTO Events (FileName, Event) VALUES ('$file', '$event');"
 }

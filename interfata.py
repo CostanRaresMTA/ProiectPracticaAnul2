@@ -2,15 +2,15 @@ import tkinter as tk
 from tkinter import ttk, messagebox
 import sqlite3
 
-# Conectarea la baza de date SQLite
+#Conectarea la baza de date SQLite
 conn = sqlite3.connect('inotify_events.db')
 cursor = conn.cursor()
 
-# Crearea ferestrei principale
+#Crearea ferestrei principale
 root = tk.Tk()
 root.title("Inotify Events Database")
 
-# Funcția pentru a filtra rezultatele în tabel
+#Functia pentru a filtra rezultatele in tabel
 def filter_events():
     file_filter = entry_search_filename.get().strip()
     event_filter = entry_search_event.get().strip()
@@ -44,7 +44,7 @@ def filter_events():
         for row in results:
             tree.insert("", "end", values=row)
 
-# Funcția pentru a reîmprospăta tabelul
+#Functia pentru a reimprospata tabelul
 def refresh_table():
     for row in tree.get_children():
         tree.delete(row)
@@ -52,7 +52,7 @@ def refresh_table():
     for row in cursor.fetchall():
         tree.insert("", "end", values=row)
 
-# Funcția pentru a curăța vizual tabelul din interfață
+#Functia pentru a curata vizual tabelul din interfata
 def clear_events():
     for row in tree.get_children():
         tree.delete(row)
@@ -60,7 +60,7 @@ def clear_events():
     entry_search_event.delete(0, tk.END)
     messagebox.showinfo("Events Cleared", "All events have been cleared from the display.")
 
-# Crearea cadrului pentru filtrare
+#Crearea cadrului pentru filtrare
 frame_filter = ttk.Frame(root)
 frame_filter.pack(pady=10)
 
@@ -74,29 +74,29 @@ entry_search_event.grid(row=1, column=1, padx=5)
 
 ttk.Button(frame_filter, text="Filter", command=filter_events).grid(row=2, column=0, columnspan=2, pady=10)
 
-# Crearea cadrului pentru butoane
+#Crearea cadrului pentru butoane
 frame_buttons = ttk.Frame(root)
 frame_buttons.pack(pady=10)
 
 ttk.Button(frame_buttons, text="Refresh", command=refresh_table).pack(side=tk.LEFT, padx=5)
 ttk.Button(frame_buttons, text="Clear Events", command=clear_events).pack(side=tk.LEFT, padx=5)
 
-# Crearea cadrului pentru tabel
+#Crearea cadrului pentru tabel
 frame_table = ttk.Frame(root)
 frame_table.pack(pady=10)
 
-# Crearea tabelului
+#Crearea tabelului
 columns = ("ID", "FileName", "Event", "EventTime")
 tree = ttk.Treeview(frame_table, columns=columns, show="headings")
 for col in columns:
     tree.heading(col, text=col)
 tree.pack()
 
-# Actualizarea tabelului la lansarea aplicației
+#Actualizarea tabelului la lansarea aplicatiei
 refresh_table()
 
-# Rularea aplicației
+#Rularea aplicatiei
 root.mainloop()
 
-# Închiderea conexiunii la baza de date
+#Inchiderea conexiunii la baza de date
 conn.close()
